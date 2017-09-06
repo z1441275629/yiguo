@@ -1,0 +1,88 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background: #f7f8f8;
+	font-size:12px;
+	font-family: Arial,Verdana,"\5b8b\4f53";
+}
+a{
+	text-decoration: none;
+	color:black;
+}
+ul,li{
+	list-style: none;	
+}
+#goods_list{
+	width: 1200px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	overflow:hidden;
+}
+#goods_list li{
+	float:left;
+	margin:5px;
+	position: relative;
+	background: #fff;
+}
+#goods_list li .p-buy{
+	background: white;
+	display: none;
+	position: absolute;
+	left:0px;
+	top: 220px;
+	text-align: center;
+}
+#goods_list li:hover .p-buy{
+	opacity: 0.8;
+	width: 100%;
+	display: block;
+}
+#goods_list li .p-buy *{
+	display: block;
+}
+#goods_list li .p-buy span{
+	height:20px;
+	line-height: 20px;
+}
+#goods_list li .p-buy a{
+	height:25px;
+	width: 180px;
+	margin: 0 auto;
+	border-radius: 4px;
+	line-height: 25px;
+	background: #008742;
+	color: white;
+}
+#goods_list li p img{
+	position: absolute;
+	left:5px;
+	top:5px;
+}
+#goods_list li .p_info{
+	padding:0 0 0px 10px;
+	width: 100%;
+	height: 68px;
+	box-sizing: border-box;
+}
+#goods_list li .p_info .p_name{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 280px;
+	height:30px;
+	line-height: 30px;
+}
+#goods_list li .p_info .p_name a{
+	color: #444;
+}
+#goods_list li .p_info .p_name a:hover{
+	text-decoration: underline;
+	color:#008742;
+}
+#goods_list li .p_info .p_price strong{
+	color: #e7380d;
+	font-size: 20px;
+	line-height: 20px;
+}

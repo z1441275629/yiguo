@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			a{
+				text-decoration: none;
+			}
+			ul,li{
+				list-style: none;
+			}
+			li{
+				float:left;
+			}
+		</style>
+	</head>
+	<body>
+	</body>
+</html>
+<script src="../js/ajaxTools.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	my_ajax({url:"../json/floor1.php",func:addToHtml});
+	function addToHtml(str){
+		console.log(str);
+		document.body.innerHTML=str;
+	}
+</script>
